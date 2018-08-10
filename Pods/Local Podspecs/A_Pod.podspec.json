@@ -1,0 +1,23 @@
+{
+  "name": "A_pod",
+  "version": "1",
+  "summary": "A_pod.",
+  "description": "this is A_pod",
+  "homepage": "https://github.com/FKOrganization/A_Pod.git",
+  "license": {
+    "type": "MIT",
+    "file": "FILE_LICENSE"
+  },
+  "authors": {
+    "CasaTaloyum": "casatwy@msn.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "https://github.com/FKOrganization/A_Pod.git",
+    "tag": "1"
+  },
+  "source_files": "A_pod/A_pod/**/*.{h,m}",
+  "requires_arc": true
+}

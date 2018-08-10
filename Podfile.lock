@@ -1,0 +1,44 @@
+PODS:
+  - A (1)
+  - A_Category (1):
+    - CTMediator
+  - B_Category (1):
+    - CTMediator
+  - CTMediator (18)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+
+DEPENDENCIES:
+  - A (from `../A`)
+  - A_Category (from `../A_Category`)
+  - B_Category (from `../B_Category`)
+  - ReactiveCocoa (~> 2.5)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CTMediator
+    - ReactiveCocoa
+
+EXTERNAL SOURCES:
+  A:
+    :path: "../A"
+  A_Category:
+    :path: "../A_Category"
+  B_Category:
+    :path: "../B_Category"
+
+SPEC CHECKSUMS:
+  A: fbe0627f1056229ef48afe4a100b94ff45b8f953
+  A_Category: 11fc746a7eeccfd9669eb5b410e9f642f7e2cdf0
+  B_Category: ef86151fc87479ec89079e21f21c5fdcd694a30a
+  CTMediator: 420e9d90f9f1fd740caf2238ed7ed64dc621c5b7
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+
+PODFILE CHECKSUM: 085ce61d3d55e583f939d3af04e41b3dab769f19
+
+COCOAPODS: 1.5.0

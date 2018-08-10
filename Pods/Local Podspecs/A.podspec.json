@@ -1,0 +1,23 @@
+{
+  "name": "A",
+  "version": "1",
+  "summary": "A.",
+  "description": "this is A",
+  "homepage": "https://github.com/FKOrganization/A.git",
+  "license": {
+    "type": "MIT",
+    "file": "FILE_LICENSE"
+  },
+  "authors": {
+    "CasaTaloyum": "casatwy@msn.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "https://github.com/FKOrganization/A.git",
+    "tag": "1"
+  },
+  "source_files": "A/A/**/*.{h,m}",
+  "requires_arc": true
+}
