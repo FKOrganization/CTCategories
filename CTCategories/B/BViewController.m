@@ -8,7 +8,11 @@
 
 #import "BViewController.h"
 
+typedef void(^Bblock)(void);
+
 @interface BViewController ()
+
+@property (nonatomic , copy)Bblock block;
 
 @end
 
@@ -24,13 +28,25 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (instancetype)initWithContentText:(NSString *)text
+- (instancetype)initWithContentText:(NSString *)text blcok:(void(^)(void))block
 {
     self = [super init];
     if (self) {
         self.title = text;
+        self.block = block;
     }
     return self;
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [super touchesBegan:touches withEvent:event];
+    if ([self.delegate respondsToSelector:@selector(getBViewControllerTitle)]) {
+        self.title = [self.delegate getBViewControllerTitle];
+    }
+    if (self.block) {
+        self.block();
+    }
 }
 
 /*

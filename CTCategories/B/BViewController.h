@@ -6,10 +6,18 @@
 //  Copyright © 2018年 FK. All rights reserved.
 //
 
-#import "ViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface BViewController : ViewController
+@protocol BViewControllerDelegate <NSObject>
 
-- (instancetype)initWithContentText:(NSString *)text;
+- (NSString *)getBViewControllerTitle;
+
+@end
+
+@interface BViewController : UIViewController
+
+- (instancetype)initWithContentText:(NSString *)text blcok:(void(^)(void))block;
+
+@property (nonatomic , weak)id<BViewControllerDelegate> delegate;
 
 @end

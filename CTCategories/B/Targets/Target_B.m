@@ -9,12 +9,19 @@
 #import "Target_B.h"
 #import "BViewController.h"
 
+@interface Target_B()
+
+@end
+
 @implementation Target_B
 
 - (UIViewController *)Action_viewController:(NSDictionary *)params
 {
     NSString *contentText = params[@"contentText"];
-    BViewController *viewController = [[BViewController alloc] initWithContentText:contentText];
+    id wself = params[@"self"];
+    id block = params[@"block"];
+    BViewController *viewController = [[BViewController alloc] initWithContentText:contentText blcok:block];
+    viewController.delegate = wself;
     return viewController;
 }
 
